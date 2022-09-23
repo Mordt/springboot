@@ -15,7 +15,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-    @bean
+    @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx){
         return args -> {
             System.out.println("Lets inspect the beans created by Spring Boot:");
